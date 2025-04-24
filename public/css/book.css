@@ -1,0 +1,83 @@
+
+.container_book {
+    display: none; 
+    flex-direction: row; 
+    overflow-x: auto;
+    overflow-y: hidden;
+    align-items: center; 
+    width: 100%;
+    padding: 20px;
+    gap: 30px; 
+    margin-top: 10px;    
+    justify-content: flex-start;
+    background: linear-gradient( 
+        rgba(255, 255, 255, 0.452),
+        rgba(0, 0, 0, 0.452),
+        rgba(165, 42, 42, 0.452),
+        rgba(255, 255, 255, 0.452),
+        rgba(0, 0, 0, 0.452),
+        rgba(165, 42, 42, 0.452)
+    );
+    border-radius: 20px; 
+    border: dashed 2px rgb(97, 50, 6); 
+}
+
+/* Scroll personalizado */
+.container_book::-webkit-scrollbar {
+    height: 12px;
+    width: 12px;
+}
+
+.container_book::-webkit-scrollbar-track {
+    background: #ce2c036e;
+    border-radius: 10px;
+}
+
+.container_book::-webkit-scrollbar-thumb {
+    background: #c22c07cb;
+    border-radius: 10px;
+    border: 2px solid #ce2c036e;
+}
+
+.container_book::-webkit-scrollbar-thumb:hover {
+    background: rgba(160, 81, 45, 0.61);
+}
+
+.container_book .set {
+    flex: 0 0 auto;
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    width: 287px;
+}
+
+.set h3.title {
+    color: white;
+    text-align: center;
+    text-shadow: 
+        -2px -2px 0 #000,  
+         2px -2px 0 #000,
+        -2px  2px 0 #000,
+         2px  2px 0 #000;
+    margin-bottom: 5px;
+    font-size: 5vh;
+}
+
+.set img.cover {
+    height: 40vh; 
+    border-radius: 10px;
+    border: 2px dashed rgb(46, 4, 4);
+    box-shadow: 5px 5px 10px rgba(61, 14, 14, 0.5);
+}
+
+
+.synopsis {
+    margin-top: 10px;
+    padding: 10px;
+    color: #fff;
+    font-size: 2.3vh;
+    text-align: justify;
+    background: rgba(0,0,0,0.6);
+    border-radius: 10px;
+    box-shadow: 0 0 8px rgba(255,255,255,0.3);
+}

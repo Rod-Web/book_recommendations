@@ -1,0 +1,58 @@
+
+h1 {
+    font-size: 8vh;
+    color: rgb(243, 242, 240);
+    text-align: center;
+    text-shadow: 
+        -2px -2px 0 #000,  
+         2px -2px 0 #000,
+        -2px  2px 0 #000,
+         2px  2px 0 #000;
+}
+
+.container_choice h2 {
+    font-size: 7vh;
+    color: rgb(78, 12, 12);
+    text-align: center;
+    text-shadow: 
+        0px -1px 0 white,
+        2px 1px 0 white;
+}
+
+.all_buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 17px;
+    justify-content: center;
+    margin-top: 30px;
+    padding: 7px;
+    border-radius: 6px;
+    background-color: rgba(148, 26, 26, 0.226);
+}
+
+.all_buttons button {
+    font-size: 3vh;
+    background: linear-gradient(white, brown, black);
+    border: brown solid 1px;
+    color: white;
+    padding: 3px;
+    border-radius: 5px;
+    transition: 1s;
+    animation: brilho 1s infinite alternate;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
+}
+
+.all_buttons button:hover {
+    transform: scale(0.96);
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+@keyframes brilho {
+    from {
+        box-shadow: 0 0 3px #ffffff;
+    }
+    to {
+        box-shadow: 0 0 10px #ffffff;
+    }
+}
