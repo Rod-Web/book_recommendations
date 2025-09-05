@@ -1,8 +1,8 @@
 import {bd_book} from "/public/data/db_book.js";
 const database = bd_book
 
-import addBook from "./addbook.js"
-import addSynopsis from "./addsynopsis.js";
+import addBook from "/public/js/addbook.js"
+import addSynopsis from "/public/js/addsynopsis.js";
 
 let buttons = document.querySelectorAll('button')
 buttons.forEach(button => {
