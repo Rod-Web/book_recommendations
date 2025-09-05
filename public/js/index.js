@@ -1,4 +1,4 @@
-import {bd_book} from "../../db_book.js";
+import {bd_book} from "../data/db_book.js";
 const database = bd_book
 
 import addBook from "./addbook.js"
